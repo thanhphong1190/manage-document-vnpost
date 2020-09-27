@@ -21,15 +21,9 @@ ReactDOM.render(
             <Route path="/login" component={Login}></Route>
             <ProtectedRoute exact={true} path="/" component={Router} />
             <ProtectedRoute path="/home" component={Router} />
-            <ProtectedRoute path="/manage-category" component={Router} />
-            <ProtectedRoute path="/manage-cr/create-cr" component={Router} />
             <ProtectedRoute path="/manage-user" component={Router} />
-            <ProtectedRoute path="/manage-partner" component={Router} />
             <ProtectedRoute path="/settings" component={Router} />
             <ProtectedRoute path="/notifications" component={Router} />
-            <ProtectedRoute path="/manage-contract" component={Router} />
-            <ProtectedRoute path="/manage-ground-price" component={Router} />
-            <ProtectedRoute path="/manage-station" component={Router} />
           </Switch>
           <ReduxToastr
             timeOut={3000}

@@ -32,43 +32,13 @@ export const SIDE_BAR = [
     id: "home",
     key: "home",
     icon: "fa fa-book",
-    text: "Home",
-  },
-  {
-    id: "manage-contract",
-    key: "manage-contract",
-    icon: "fa fa-files-o",
-    text: "Quản lý hợp đồng"
-  },
-  {
-    id: "manage-partner",
-    key: "manage-partner",
-    icon: "fa fa-user",
-    text: "Quản lý đối tác",
-  },
-  {
-    id: "manage-ground-price",
-    key: "manage-ground-price",
-    icon: "fa fa-user-plus",
-    text: "Quản lý khung giá mb"
-  },
-  {
-    id: "manage-category",
-    key: "manage-category",
-    icon: "fa fa-user-plus",
-    text: "Quản lý hạng mục"
+    text: "Trang chủ",
   },
   {
     id: "manage-user",
     key: "manage-user",
     icon: "fa fa-user-plus",
     text: "Quản lý người dùng",
-  },
-  {
-    id: "manage-station",
-    key: "manage-station",
-    icon: "fa fa-user-plus",
-    text: "Quản lý trạm",
   },
   {
     id: "settings",

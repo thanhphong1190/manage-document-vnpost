@@ -1,7 +1,12 @@
 @import "../../styles/variables";
 
 .side-nav-container {
-    position: relative !important;
-    height: 100vh !important;
-    background-color: $main-color !important;
+  position: relative !important;
+  height: 100vh !important;
+  background: #22c1c3 !important;
+  background: radial-gradient(
+    circle,
+    #22c1c3 0%,
+    #2570d5 100%
+  ) !important;
 }
