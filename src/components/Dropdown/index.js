@@ -11,7 +11,7 @@ import CreateEdit from "../Modal/CreateEdit";
 class DropDown extends React.Component {
   state = {
     isShowAddUpdateModal: false,
-    title: "Tạo folder mới"
+    title: "Tạo folder mới",
   };
   render() {
     const { title } = this.props;
@@ -25,38 +25,44 @@ class DropDown extends React.Component {
                 this.setState({
                   isShowAddUpdateModal: true,
                   mode: "create",
-                  title: "Tạo folder mới"
+                  title: "Tạo folder mới",
                 })
               }
             >
               <i className="fa fa-plus-circle mr-2" aria-hidden="true"></i>Tạo
               thư mục mới
             </DropdownItem>
-            <DropdownItem onClick={() =>
+            <DropdownItem
+              onClick={() =>
                 this.setState({
                   isShowAddUpdateModal: true,
                   mode: "share",
-                  title: "Chia sẻ"
+                  title: "Chia sẻ",
                 })
-              }>
+              }
+            >
               <i className="fa fa-share-square mr-2" aria-hidden="true"></i>Chia
               sẻ
             </DropdownItem>
-            <DropdownItem onClick={() =>
+            <DropdownItem
+              onClick={() =>
                 this.setState({
                   isShowAddUpdateModal: true,
                   mode: "edit",
-                  title: "Đổi tên folder"
+                  title: "Đổi tên folder",
                 })
-              }>
+              }
+            >
               <i className="fa fa-pencil-square mr-2" aria-hidden="true"></i>Đổi
               tên
             </DropdownItem>
             <DropdownItem>
-              <i className="fa fa-cloud-upload mr-2" aria-hidden="true"></i>Tải tệp lên
+              <i className="fa fa-cloud-upload mr-2" aria-hidden="true"></i>Tải
+              tệp lên
             </DropdownItem>
             <DropdownItem>
-              <i className="fa fa-cloud-download mr-2" aria-hidden="true"></i>Tải xuống
+              <i className="fa fa-cloud-download mr-2" aria-hidden="true"></i>
+              Tải xuống
             </DropdownItem>
             <DropdownItem divider />
             <DropdownItem>
@@ -66,7 +72,7 @@ class DropDown extends React.Component {
         </UncontrolledDropdown>
         <CreateEdit
           buttonType="primary"
-          title= {this.state.title}
+          title={this.state.title}
           toggle={() =>
             this.setState({
               isShowAddUpdateModal: !this.state.isShowAddUpdateModal,

@@ -80,6 +80,17 @@ class Home extends React.Component {
                         </div>
                       </div>
                     </Col>
+                    <Col md="3">
+                      <div className="item-folder-wrapper">
+                        <div className="item-title w-100 d-flex align-items-center p-2">
+                          <i
+                            className="fa fa-folder mr-2"
+                            aria-hidden="true"
+                          ></i>
+                          <p>Folder 2</p>
+                        </div>
+                      </div>
+                    </Col>
                   </Row>
                 </div>
               </div>
@@ -94,6 +105,14 @@ class Home extends React.Component {
                         <div className="item-title w-100 d-flex align-items-center p-2">
                           <i className="fa fa-file mr-2" aria-hidden="true"></i>
                           <span>Bảng đánh giá.txt</span>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col md="3">
+                      <div className="item-file-wrapper">
+                        <div className="item-title w-100 d-flex align-items-center p-2">
+                          <i className="fa fa-file mr-2" aria-hidden="true"></i>
+                          <span>Văn bản xác nhận.pdf</span>
                         </div>
                       </div>
                     </Col>
