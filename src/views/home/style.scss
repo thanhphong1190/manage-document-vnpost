@@ -1,41 +1,66 @@
-.content-wrapper {
-  min-height: 85vh;
-  .content-item {
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    .header-wrapper {
-      background-color: #ededed;
-      .header-left {
-        i {
-          color: #cccccc;
-          cursor: pointer;
-          &:hover {
-            color: black;
-          }
-        }
+.header-wrapper {
+  border-bottom: 1px solid #cccccc;
+  .breadcum {
+    .breadcum-item {
+      h6 {
+        margin-bottom: 0px !important;
       }
-      .header-right {
-        .action-button {
-          padding: 5px 10px;
-          cursor: pointer;
-          i {
-            font-size: 20px;
-          }
-          &:hover {
-            background-color: #ffffff;
-          }
+    }
+  }
+}
+
+.content-wrapper {
+  .create-folder-button {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #0069d9;
+    i {
+      color: #ffffff;
+    }
+  }
+  .folder-container {
+    .item-folder-wrapper,
+    .item-file-wrapper {
+      cursor: pointer;
+      position: relative;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      &:hover {
+        background-color: #cccccc;
+      }
+    }
+    .item-folder-wrapper {
+      .item-title {
+        padding: 20px;
+        i {
+          font-size: 20px;
+        }
+        p {
+          margin-bottom: 0px !important;
+          max-width: 80%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          
         }
       }
     }
-    .folder-item {
-      padding: 10px 15px;
-      cursor: pointer;
-      background-color: #cccccc;
-      &:hover {
-        background: #22c1c3 !important;
-        background: radial-gradient(circle, #22c1c3 0%, #2570d5 100%) !important;
-        color: #ffffff;
+    .item-file-wrapper {
+      .item-title {
+        padding: 20px;
+        i {
+          font-size: 20px;
+        }
+        p {
+          margin-bottom: 0px !important;
+          max-width: 80%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          
+        }
       }
     }
   }

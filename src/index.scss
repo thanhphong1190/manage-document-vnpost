@@ -16,22 +16,6 @@ body {
     height: 100vh;
   }
 
-  .btn {
-    &.btn-success {
-      background-color: $success-color !important;
-      background: radial-gradient(circle, #8cdeb3 0%, $success-color 100%) !important;
-      border-color: $success-color !important;
-    }
-    &.btn-danger {
-      background-color: $danger-color !important;
-      background: radial-gradient(circle, #b97893 0%, $danger-color 100%) !important;
-      border-color: $danger-color !important;
-    }
-    background: #22c1c3 !important;
-    background: radial-gradient(circle, #22c1c3 0%, #2570d5 100%) !important;
-    border-color: #22c1c3 !important;
-  }
-
   .page-title {
     border-bottom: 1px solid #ccc;
     padding: 5px 0px;

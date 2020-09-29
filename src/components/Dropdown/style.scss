@@ -1,0 +1,16 @@
+.dropdown {
+    button {
+        background: none !important;
+        color: black;
+        border: none;
+        outline: none;
+        margin-left: 5px;
+        &:hover {
+            background-color: #cccccc !important;
+        }
+        &:focus {
+            background-color: #cccccc !important;
+            color: black !important;
+        }
+    }
+}

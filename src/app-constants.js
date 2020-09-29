@@ -41,6 +41,12 @@ export const SIDE_BAR = [
     text: "Quản lý người dùng",
   },
   {
+    id: "manage-user-group",
+    key: "manage-user-group",
+    icon: "fa fa-users",
+    text: "Quản lý nhóm user",
+  },
+  {
     id: "settings",
     key: "settings",
     icon: "fa fa-cogs",
