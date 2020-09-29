@@ -1,7 +1,7 @@
 // App config
 
 const appConfig = {
-  appName: 'Mobifone - Quản lý CSHT',
+  appName: 'POST- Quản lý dữ liệu',
   appVersion: '0.1',
   apiBaseUrl: process.env.REACT_APP_API_URL
 };
