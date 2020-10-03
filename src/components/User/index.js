@@ -3,9 +3,15 @@ import "./style.scss";
 
 class User extends React.Component {
   state = {};
+
   getUserCharacter = (_userName) => {
     return _userName.charAt(0);
   };
+
+  getRandomColor = () => {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  };
+
   render() {
     const { userName, size, fontSize, isAddUser } = this.props;
     return (
@@ -14,7 +20,7 @@ class User extends React.Component {
         style={{
           width: `${size}px`,
           height: `${size}px`,
-          backgroundColor: isAddUser ? "#ccc" : "green",
+          backgroundColor: isAddUser ? "#ccc" : this.getRandomColor(),
         }}
       >
         <span className="text-uppercase" style={{ fontSize: `${fontSize}px` }}>
