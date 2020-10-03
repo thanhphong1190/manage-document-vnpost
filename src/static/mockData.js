@@ -18,11 +18,11 @@ export const ManageUserGroupData = [
     user_group_list: [
       {
         id: 1,
-        name: "Phong",
+        name: "Phong Trần",
       },
       {
         id: 2,
-        name: "Nam",
+        name: "Nguyễn Nam",
       },
     ],
   },
@@ -33,11 +33,11 @@ export const ManageUserGroupData = [
     user_group_list: [
       {
         id: 3,
-        name: "Khoa",
+        name: "Khoa Phạm",
       },
       {
         id: 4,
-        name: "Huy",
+        name: "Huy Đặng",
       },
     ],
   },

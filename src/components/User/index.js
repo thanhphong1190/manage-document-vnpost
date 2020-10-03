@@ -5,11 +5,16 @@ class User extends React.Component {
   state = {};
 
   getUserCharacter = (_userName) => {
+    const lastSpaceIndex = _userName.lastIndexOf(" ");
+    if (lastSpaceIndex) {
+      return _userName.charAt(lastSpaceIndex + 1);
+    }
     return _userName.charAt(0);
   };
 
   getRandomColor = () => {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    const colorCode = Math.floor(Math.random() * 16777215).toString(16)
+    return `#${colorCode}`
   };
 
   render() {
