@@ -5,6 +5,7 @@ import AppHeader from "../components/Header";
 import SideBar from "../components/SideBar";
 import Home from "./home";
 import ManageUser from "./manage-user";
+import ManageUserGroup from "./manage-user-group";
 import Settings from "./settings";
 import Notifications from "./notifications";
 
@@ -17,6 +18,7 @@ const AppRouter = (props) => (
         <Route exact={true} path="/" component={Home} />
         <Route path="/home" component={Home} />
         <Route path="/manage-user" component={ManageUser} />
+        <Route path="/manage-user-group" component={ManageUserGroup} />
         <Route path="/settings" component={Settings} />
         <Route path="/notifications" component={Notifications} />
       </Switch>

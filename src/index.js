@@ -22,6 +22,7 @@ ReactDOM.render(
             <ProtectedRoute exact={true} path="/" component={Router} />
             <ProtectedRoute path="/home" component={Router} />
             <ProtectedRoute path="/manage-user" component={Router} />
+            <ProtectedRoute path="/manage-user-group" component={Router} />
             <ProtectedRoute path="/settings" component={Router} />
             <ProtectedRoute path="/notifications" component={Router} />
           </Switch>
