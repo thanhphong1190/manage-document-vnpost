@@ -86,7 +86,7 @@ class Home extends React.Component {
                 <div className="folder-container w-100">
                   <Row>
                     <Col md={12} lg={6}>
-                      <div className="item-file-wrapper p-2 pr-4 d-flex justify-content-between">
+                      <div className="item-file-wrapper p-2 pr-4 d-flex justify-content-between m-1 w-100">
                         <div className="item-title w-100 d-flex align-items-center">
                           <i className="fa fa-file mr-2" aria-hidden="true"></i>
                           <p className="mb-0 text-center">Bảng đánh giá.txt</p>
@@ -105,7 +105,7 @@ class Home extends React.Component {
                       </div>
                     </Col>
                     <Col md={12} lg={6}>
-                      <div className="item-file-wrapper p-2 pr-4 d-flex justify-content-between">
+                      <div className="item-file-wrapper p-2 pr-4 d-flex justify-content-between m-1 w-100">
                         <div className="item-title w-100 d-flex align-items-center">
                           <i className="fa fa-file mr-2" aria-hidden="true"></i>
                           <p className="mb-0 text-center">Bảng đánh giá.txt</p>
