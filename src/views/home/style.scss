@@ -1,66 +1,53 @@
-.header-wrapper {
-  border-bottom: 1px solid #cccccc;
-  .breadcum {
-    .breadcum-item {
-      h6 {
-        margin-bottom: 0px !important;
+.page-content {
+  background-color: #ffffff;
+  .header-wrapper {
+    border-bottom: 1px solid #cccccc;
+    .breadcum {
+      .breadcum-item {
+        h6 {
+          margin-bottom: 0px !important;
+        }
       }
     }
   }
-}
 
-.content-wrapper {
-  .create-folder-button {
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #0069d9;
-    i {
-      color: #ffffff;
-    }
-  }
-  .folder-container {
-    .item-folder-wrapper {
+  .content-wrapper {
+    .create-folder-button {
       cursor: pointer;
-      width: 120px;
-      height: auto;
-      &:hover {
-        background-color: #d0f0f5;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #0069d9;
+      i {
+        color: #ffffff;
       }
     }
-    .item-folder-wrapper {
-      .item-title {
-        img {
-          width: 80px;
-          height: auto;
+    .folder-container {
+      .item-file-wrapper {
+        border-right: 2px solid #d0f0f5;
+        &:hover {
+          background-color: #d0f0f5;
         }
-      }
-    }
-    .item-file-wrapper {
-      border-right: 2px solid #d0f0f5;
-      &:hover {
-        background-color: #d0f0f5;
-      }
-      .item-title {
-        i {
-          font-size: 20px;
-        }
-      }
-      .item-right {
-        .item-action {
+        .item-title {
           i {
-            font-size: 22px;
-            cursor: pointer;
+            font-size: 20px;
           }
-          .fa-cloud-download {
-            &:hover {
-              color: green;
+        }
+        .item-right {
+          .item-action {
+            i {
+              font-size: 22px;
+              cursor: pointer;
             }
-          }
-          .fa-trash {
-            &:hover {
-              color: #dc3545;
+            .fa-cloud-download {
+              &:hover {
+                color: green;
+              }
+            }
+            .fa-trash {
+              &:hover {
+                color: #dc3545;
+              }
             }
           }
         }

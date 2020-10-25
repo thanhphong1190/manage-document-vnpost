@@ -38,13 +38,13 @@ export const SIDE_BAR = [
     id: "manage-user",
     key: "manage-user",
     icon: "fa fa-user-plus",
-    text: "Quản lý người dùng",
+    text: "Người dùng",
   },
   {
     id: "manage-user-group",
     key: "manage-user-group",
     icon: "fa fa-users",
-    text: "Quản lý nhóm user",
+    text: "Nhóm user",
   },
   {
     id: "settings",

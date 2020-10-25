@@ -11,17 +11,17 @@ import Notifications from "./notifications";
 
 const AppRouter = (props) => (
   <div className="body-container d-flex">
-    <SideBar {...props} />
-    <div className="content-container flex-fill">
+    {/* <SideBar {...props} /> */}
+    <div className="flex-fill">
       <AppHeader {...props} />
-      <Switch>
-        <Route exact={true} path="/" component={Home} />
-        <Route path="/home" component={Home} />
-        <Route path="/manage-user" component={ManageUser} />
-        <Route path="/manage-user-group" component={ManageUserGroup} />
-        <Route path="/settings" component={Settings} />
-        <Route path="/notifications" component={Notifications} />
-      </Switch>
+        <Switch>
+          <Route exact={true} path="/" component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/manage-user" component={ManageUser} />
+          <Route path="/manage-user-group" component={ManageUserGroup} />
+          <Route path="/settings" component={Settings} />
+          <Route path="/notifications" component={Notifications} />
+        </Switch>
     </div>
   </div>
 );

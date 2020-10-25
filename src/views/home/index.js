@@ -10,12 +10,13 @@ import {
 } from "reactstrap";
 import "./style.scss";
 import DropDown from "../../components/Dropdown";
+import { DropZone } from "../../components/DropZone";
 import CreateEdit from "../../components/Modal/CreateEdit";
 // import _ from "lodash";
 // import http from "../../helpers/http";
-import folderIconUrl from "../../static/imgs/blue_folder.png";
 import addFolderIconUrl from "../../static/imgs/add_folder.png";
 import User from "../../components/User";
+import Folder from "../../components/Folder";
 
 class Home extends React.Component {
   state = {
@@ -25,7 +26,7 @@ class Home extends React.Component {
   };
   render() {
     return (
-      <Container className="mt-2 px-4 py-2" fluid={true}>
+      <Container className="py-4 page-content">
         <Row>
           <Col md="12">
             <div className="header-wrapper w-100 d-flex justify-content-between">
@@ -53,6 +54,9 @@ class Home extends React.Component {
           <Col md="12">
             <div className="content-wrapper d-flex flex-column w-100 pt-4">
               <div className="w-100 mb-5">
+                <DropZone />
+              </div>
+              <div className="w-100 mb-5">
                 <div className="d-flex align-items-center pb-3">
                   <h6 className="mb-0">Thư mục</h6>
                 </div>
@@ -71,12 +75,7 @@ class Home extends React.Component {
                       <img src={addFolderIconUrl} alt="post vn" />
                     </div>
                   </div>
-                  <div className="item-folder-wrapper p-2">
-                    <div className="item-title py-2 w-100 d-flex flex-column align-items-center">
-                      <img src={folderIconUrl} alt="post vn" />
-                      <p className="mb-0 text-center">Folder name 1</p>
-                    </div>
-                  </div>
+                  <Folder folderName="Folder name 1"/>
                 </div>
               </div>
 
@@ -85,7 +84,7 @@ class Home extends React.Component {
                 <h6 className="pb-2">Tệp</h6>
                 <div className="folder-container w-100">
                   <Row>
-                    <Col md={12} lg={6}>
+                    <Col md={12}>
                       <div className="item-file-wrapper p-2 pr-4 d-flex justify-content-between m-1 w-100">
                         <div className="item-title w-100 d-flex align-items-center">
                           <i className="fa fa-file mr-2" aria-hidden="true"></i>
@@ -95,16 +94,19 @@ class Home extends React.Component {
                           <div className="d-flex mr-4">
                             <User userName="Nam" size={40} fontSize={20} />
                             <User userName="Phong" size={40} fontSize={20} />
-                            <User size={40} fontSize={20} isAddUser={true}/>
+                            <User size={40} fontSize={20} isAddUser={true} />
                           </div>
                           <div className="item-action d-flex">
-                            <i className="fa fa-cloud-download mr-2" aria-hidden="true"></i>
+                            <i
+                              className="fa fa-cloud-download mr-2"
+                              aria-hidden="true"
+                            ></i>
                             <i className="fa fa-trash" aria-hidden="true"></i>
                           </div>
                         </div>
                       </div>
                     </Col>
-                    <Col md={12} lg={6}>
+                    <Col md={12}>
                       <div className="item-file-wrapper p-2 pr-4 d-flex justify-content-between m-1 w-100">
                         <div className="item-title w-100 d-flex align-items-center">
                           <i className="fa fa-file mr-2" aria-hidden="true"></i>
@@ -114,10 +116,13 @@ class Home extends React.Component {
                           <div className="d-flex mr-4">
                             <User userName="Nam" size={40} fontSize={20} />
                             <User userName="Phong" size={40} fontSize={20} />
-                            <User size={40} fontSize={20} isAddUser={true}/>
+                            <User size={40} fontSize={20} isAddUser={true} />
                           </div>
                           <div className="item-action d-flex">
-                            <i className="fa fa-cloud-download mr-2" aria-hidden="true"></i>
+                            <i
+                              className="fa fa-cloud-download mr-2"
+                              aria-hidden="true"
+                            ></i>
                             <i className="fa fa-trash" aria-hidden="true"></i>
                           </div>
                         </div>

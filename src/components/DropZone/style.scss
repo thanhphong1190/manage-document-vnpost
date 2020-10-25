@@ -1,0 +1,16 @@
+.drop-zone-wrapper {
+  padding: 30px;
+  border: 3px dotted #cccccc;
+  .drop-text {
+    i {
+      color: #d0f0f5;
+      font-size: 25px;
+    }
+  }
+  .drop-text-active {
+    i {
+      color: #34cceb;
+      font-size: 25px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.item-folder-wrapper {
+    cursor: pointer;
+    width: 120px;
+    height: auto;
+    &:hover {
+      background-color: #d0f0f5;
+    }
+  }
+  .item-folder-wrapper {
+    .item-title {
+      img {
+        width: 80px;
+        height: auto;
+      }
+    }
+  }
